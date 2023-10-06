@@ -8,12 +8,11 @@ const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+  <div style={{ display: 'flex', justifyContent: 'center', height: '100vh', backgroundColor: '#2b2a33', color: 'white' }}>
+      <React.StrictMode>
+          <App />
+      </React.StrictMode>
+  </div>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
